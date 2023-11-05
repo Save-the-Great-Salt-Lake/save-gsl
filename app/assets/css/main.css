@@ -3331,6 +3331,7 @@ table.alt tfoot {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row;
 }
 
 .wrapper > .inner.iframed > iframe {
@@ -3363,6 +3364,13 @@ table.alt tfoot {
 @media screen and (max-width: 736px) {
   .wrapper > .inner {
     padding: 3em 2em 1em 2em;
+  }
+  .wrapper > .inner.iframed {
+    flex-direction: column;
+  }
+  .wrapper > .inner.iframed > iframe {
+    height: 100%;
+    width: 100%;
   }
 }
 
