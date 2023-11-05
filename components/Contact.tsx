@@ -125,7 +125,13 @@ Thank you for your time and consideration. I am hopeful that with your support, 
               </div>
               <div className='field findReps'>
                 <br />
-                <input type="button" value="Find my Reps!" onClick={() => window.open(`https://www.usa.gov/elected-officials-results?input-street=${address}&input-city=${city}&input-state=${state}&input-zip=${zip}#skip-to-h1`, '_blank')} />
+                <input type="button" value="Find my Reps!" onClick={() => {
+                  if (address.length > 1 && city.length > 1 && state.length > 1 && zip.length > 1) {
+                    window.open(`https://www.usa.gov/elected-officials-results?input-street=${address}&input-city=${city}&input-state=${state}&input-zip=${zip}#skip-to-h1`, '_blank')
+                  } else {
+                    window.open('https://www.usa.gov/elected-officials', '_blank')
+                  }
+                }} />
                 <br />
                 <p>(It&lsquo;s suggested you contact your state House Representative and Senator)</p>
               </div>
