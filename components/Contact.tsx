@@ -43,47 +43,9 @@ Thank you for your time and consideration. I am hopeful that with your support, 
       <div className="inner">
         <h2>Contact the Right People</h2>
         <p>Send an email to each of your government representatives!</p>
-        <p>Find your government representatives <a href='https://www.usa.gov/elected-officials' target="_blank">here</a></p>
         <section>
           <form id="email-form">
             <div className="fields">
-              <div className="field half">
-                <label htmlFor="name">Representative&lsquo;s Name</label>
-                <input
-                  type="text"
-                  name="name"
-                  id="name"
-                  required
-                  value={repName}
-                  onChange={(e) => setRepName(e.target.value)}
-                />
-              </div>
-              <div className="field half">
-                <label htmlFor="rep-email">Representative&lsquo;s Email:</label>
-                <input
-                  type="email"
-                  id="rep-email"
-                  name="rep-email"
-                  required
-                  value={repEmail}
-                  onChange={(e) => setRepEmail(e.target.value)}
-                />
-                <br />
-              </div>
-              <div className="field">
-                <label htmlFor="message">Your Message:</label>
-                <br />
-                <textarea
-                  id="message"
-                  name="message"
-                  rows={10}
-                  cols={30}
-                  required
-                  value={message}
-                  onChange={(e) => setMessage(e.target.value)}
-                ></textarea>
-                <br />
-              </div>
               <div className="field half">
                 <label htmlFor="name">Your Full Name</label>
                 <input
@@ -160,6 +122,49 @@ Thank you for your time and consideration. I am hopeful that with your support, 
                   value={phone}
                   onChange={e => setPhone(e.target.value)}
                 />
+              </div>
+              <div className='field findReps'>
+                <br />
+                <input type="button" value="Find my Reps!" onClick={() => window.open(`https://www.usa.gov/elected-officials-results?input-street=${address}&input-city=${city}&input-state=${state}&input-zip=${zip}#skip-to-h1`, '_blank')} />
+                <br />
+                <p>(It&lsquo;s suggested you contact your state House Representative and Senator)</p>
+              </div>
+              <div className="field half">
+                <label htmlFor="name">Representative&lsquo;s Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  required
+                  value={repName}
+                  onChange={(e) => setRepName(e.target.value)}
+                />
+              </div>
+              <div className="field half">
+                <label htmlFor="rep-email">Representative&lsquo;s Email:</label>
+                <input
+                  type="email"
+                  id="rep-email"
+                  name="rep-email"
+                  required
+                  value={repEmail}
+                  onChange={(e) => setRepEmail(e.target.value)}
+                />
+                <br />
+              </div>
+              <div className="field">
+                <label htmlFor="message">Your Message:</label>
+                <br />
+                <textarea
+                  id="message"
+                  name="message"
+                  rows={10}
+                  cols={30}
+                  required
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                ></textarea>
+                <br />
               </div>
             </div>
             <input type="button" value="Compose Email" onClick={composeEmail} />

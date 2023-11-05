@@ -2368,6 +2368,13 @@ form > .fields > .field {
   width: calc(100% - 1.5em);
 }
 
+form > .fields > .findReps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 form > .fields > .field.half {
   width: calc(50% - 0.75em);
 }
@@ -4005,7 +4012,7 @@ body.is-preload #sidebar nav ul li {
 
 #intro {
   background-attachment: fixed;
-  background-image: url('images/sunset_lake_mountains.jpg');
+  background-image: url('https://i.imgur.com/HsW47fM.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
