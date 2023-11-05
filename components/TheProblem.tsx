@@ -17,13 +17,6 @@ export default function ProblemSection() {
               far-reaching implications for the local economy and quality of
               life.
             </p>
-            <ul className="actions">
-              <li>
-                <a href="generic.html" className="button">
-                  Learn more
-                </a>
-              </li>
-            </ul>
           </div>
         </div>
       </section>
