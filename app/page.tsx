@@ -1,9 +1,9 @@
-import Sidebar from '../components/Sidebar';
-import Intro from '../components/Intro';
-import ProblemSection from '../components/TheProblem';
-import WhatCanIDo from '../components/WhatCanIDo';
-import ContactSection from '../components/Contact';
-import Footer from '../components/Footer';
+import Sidebar from '../components/Sidebar'
+import Intro from '../components/Intro'
+import ProblemSection from '../components/TheProblem'
+import WhatCanIDo from '../components/WhatCanIDo'
+import ContactSection from '../components/Contact'
+import Footer from '../components/Footer'
 
 export default function Home() {
   return (
@@ -17,5 +17,5 @@ export default function Home() {
       </div>
       <Footer />
     </>
-  );
+  )
 }
