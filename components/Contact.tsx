@@ -40,7 +40,7 @@ Warmest regards,
     window.location.href = mailtoLink
   }
 
-  useEffect(() => {}, [repEmail])
+  useEffect(() => { }, [repEmail])
 
   return (
     <section id="three" className="wrapper style1 fade-up">
@@ -51,7 +51,7 @@ Warmest regards,
           <form id="email-form">
             <div className="fields">
               <div className="field">
-                <label htmlFor="rep-email">Representative's Email:</label>
+                <label htmlFor="rep-email">Representative&lsquo;s Email:</label>
                 <br />
                 <input
                   type="email"

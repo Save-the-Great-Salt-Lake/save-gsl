@@ -3,7 +3,7 @@ export default function WhatCanIDo() {
     <section id="two" className="wrapper style3 fade-up">
       <div className="inner iframed">
         <div>
-          <h2>It's Blowin' in the Wind</h2>
+          <h2>It&lsquo;s Blowin&lsquo; in the Wind</h2>
           <p>
             Fill out the form below to send an email to each of your government
             representatives!
